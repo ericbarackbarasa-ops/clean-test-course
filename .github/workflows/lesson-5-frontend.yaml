@@ -32,7 +32,7 @@ jobs:
     needs: [deploy]
     runs-on: ubuntu-latest
     steps:
-      - name: Run OWASP ZAP Baseline Scan
+      - name: Dynamic Application Security Scan
         uses: zaproxy/action-baseline@v0.7.0
         with:
           target: 'http://hangry-frontend-dev.us-east-1.elasticbeanstalk.com'
